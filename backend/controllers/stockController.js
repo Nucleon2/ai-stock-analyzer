@@ -1,9 +1,12 @@
 import request from 'request';
 import 'dotenv/config'
 
-const url = `https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&apikey=${process.env.STOCK_API}`;
 
 export const getData = async (req, res) => {
+
+  const ticker = req.params.ticker
+  console.log(req.params.ticker)
+  const url = `https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${ticker}&interval=5min&apikey=${process.env.STOCK_API}`;
     try {
         request.get({
             url: url,
