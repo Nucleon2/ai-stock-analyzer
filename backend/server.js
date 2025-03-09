@@ -4,7 +4,7 @@ const app = express()
 
 const port = 5000
 
-app.use("/stock", stockData)
+app.use("/analyseStock", stockData)
 
 app.listen(port, () => {
     console.log(`listening on port ${port}`)

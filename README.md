@@ -1,3 +1,5 @@
 # ai-stock-analyzer
-get the data first from the /stock/:ticker endpoint
-then analyse it with ai using /stock/analyse endpoint
+use your oown api keys
+npm i 
+cd backend
+node server.js
