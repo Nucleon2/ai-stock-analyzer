@@ -1,5 +1,5 @@
 import express from "express"
-import stockData from "./routes/api.js"
+import stockData from "./src/routes/api.js"
 const app = express()
 
 const port = 5000
